@@ -37,5 +37,20 @@
                 <td>7</td>
             </tr>
         </table>
+        <hr>
+        <h3>code display</h3>
+        <blockquote>How to add a class to a given element?</blockquote>
+        <a href="https://stackoverflow.com/questions/507138/how-to-add-a-class-to-a-given-element"target="_blank">click here to stackoverflow</a>
+        <pre>
+            var addClass = function(_element, _classes) {
+                var classList, item, _i, _len;
+                classList = _element.classList;
+                for (_i = 0, _len = _classes.length; _i < _len; _i++) {
+                  item = _classes[_i];
+                  classList.add(item);
+                }
+                return _element;
+              };
+        </pre>
     </body>
 </html>
